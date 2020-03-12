@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fashion</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-headers">
+                <h4 style="text-align: center;">Smart Fashion</h4>
+            </div>
+            <ul class="list-unstyled components">
+                <!-- <li>
+        
+                    <div class="inner-addon right-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input type="text" class="form-control" placeholder="Search" />
+                    </div>
+                </li> -->
+                <li>
+                    <a href="/index">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Vendor</a>
+                    <ul class=" collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="/shop">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Product</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">User</a>
+                </li>
+                <li>
+                    <a href="#">Analytics</a>
+                </li>   
+                <li>
+                    <a href="#">Marketing</a>
+                </li>
+                <li>
+                    <a href="#">Message</a>
+                </li>
+                <li>
+                    <a href="#">Configuration</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- top  -->
+        <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        &#9776;
+
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                        <ul class=" ml-auto nav navbar-nav"  >
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Super admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+    <div class="container-fluid">
+      
+
+        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+            <h1 class="h5  text-gray-900">Shops</h1>
+				<div>
+				  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-sub-2 shadow-sm mr-2 btn-primary" ><i
+					  class="fas fa-upload fa-sm text-white-50"></i>Export</a>
+				  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-sub-1 shadow-sm mr-1 btn-success"><i
+					  class="fas fa-download fa-sm text-white-50"></i>Import</a>
+				</div>
+			  </div>
+
+                  <div class="row mt3 justify-content-center" style="width: 100%;">
+
+  
+                  <div class="col-xl-2 col-md-6  mb-4 " >
+                    <div class="card shadow py-2  ">
+                      <div class="card-body ">
+                        <div class="row no-gutters align-items-center ">
+                          <div class="col-auto ">
+                            <a href="#" class="btn btn-dark btn-circle">
+                              <i class="fa fa-shopping-bag"></i>
+                            </a>
+                          </div>
+                          <div class="mr-3">
+                            <div class="h5  font-weight-bold text-gray-800 p-3">
+                              <div>12000</div>
+                              <div>Shops</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-xl-2 col-md-6  mb-4">
+                    <div class="card  shadow py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+      
+                          <div class="col-auto">
+                            <a href="#" class="btn btn-success btn-circle">
+                              <i class="fa fa-tag"></i>
+                            </a>
+                          </div>
+                          <div class="mr-3">
+                            <div class="h5  font-weight-bold text-success p-3">
+                              <div>93020</div>
+                              <div>Products</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-xl-2 col-md-6  mb-4">
+                    <div class="card  shadow py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+      
+                          <div class=" col-auto">
+                            <a href="#" class="btn btn-warning btn-circle">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </div>
+                          <div class="mr-3">
+                            <div class="h5  font-weight-bold text-warning p-3">
+                              <div>25626</div>
+                              <div>Views</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-2 col-md-6  mb-4">
+                    <div class="card  shadow py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+      
+                          <div class="col-auto">
+                            <a href="#" class="btn btn-danger btn-circle">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </div>
+                          <div class="mr-3">
+                            <div class="h5  font-weight-bold text-pink p-3">
+                              <div>32324</div>
+                              <div>Favorited</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-xl-2 col-md-6  mb-4">
+                    <div class="card  shadow py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+      
+                          <div class="col-auto">
+                            <a href="#" class="btn btn-primary btn-circle">
+                              <i class="fa fa-thumbs-up"></i>
+                            </a>
+                          </div>
+                          <div class="mr-3">
+                            <div class="h5  font-weight-bold text-purple p-3 ">
+                              <div>443233</div>
+                              <div>Tried</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+            <!--end-->
+            
+            <!-- drop down size -->
+<select id ='pagesize'>
+    <option th:value="3">3 items</option>
+    <option th:value="5">5 items</option>
+    <option th:value="7">7 items</option>
+    <option th:value="9">9 items</option>
+</select>
+                <div class="table-responsive-sm">
+                    <table class="table" id="table-main">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col" style="max-width: 4em;">Picture</th>
+                                <th scope="col">Shop's name</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Category</th>
+                                <th scope="col" style="max-width: 5em;">Posted product</th>
+                                <th scope="col" style="max-width: 5em;">Pending product</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                                <tr th:each = "shop_info , state: ${data}">
+                                <td th:text = "${shop_info.getId()}"></td>
+                                <td th:text = "${shop_info.getPicture()}"></td>
+                                 <td th:text = "${shop_info.getName()}"></td>
+                                 <td th:text = "${shop_info.getLocation()}"></td>
+                                <td th:text = "${shop_info.getCategory()}"></td>
+                                <td th:text = "${shop_info.getPostProduct()}"></td>
+                                <td th:text = "${shop_info.getPendingProduct()}"></td>
+                                <td th:text = "${shop_info.getStatus()}"></td>
+                                <td th:text = "${shop_info.getDate()}"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                 <nav th:if = "${data.totalPages gt 0}">
+ 			 <ul class="pagination justify-content-center" >
+    			<li class="page-item" th:classappend="${data.number eq 0} ? 'disabled'">
+    			<a class="page-link" th:href="@{/shop?page={id}&size=5 (id = ${data.number lt 2 ? 1 : data.number})}">&laquo;</a></li>
+    			<li class="page-item" th:each ="i : ${#numbers.sequence(1, data.totalPages )}">
+    			<a class="page-link" th:href="@{/shop?page={id}(id=${i})}" th:text =${i}></a></li>
+    			<li class="page-item" th:classappend="${data.number eq data.totalPages} ? 'disabled'">
+    			<a class="page-link" th:href="@{/shop?page={id}(id = ${data.totalPages})}">&raquo;</a></li>
+  			</ul>
+		</nav>
+                </div>
+                </div>
+                <div class="container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
